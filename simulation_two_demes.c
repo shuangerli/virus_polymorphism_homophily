@@ -35,8 +35,8 @@ int main(int argc, char* argv[]) {
 	N = atof(argv[1]);
 	s1 = atof(argv[2]);
 	s2 = atof(argv[3]);
-	p_asy1 = atof(argv[4]);
-	p_asy2 = atof(argv[5]);
+	p_asy1 = atof(argv[4]); // needs to be 0.5
+	p_asy2 = atof(argv[5]); // needs to be 0.5
 	pref1 = atof(argv[6]);
 	pref2 = atof(argv[7]);
 	migration = atof(argv[8]);
@@ -58,7 +58,7 @@ int main(int argc, char* argv[]) {
 
 	p_s1 = 1. - p_asy1;
 	p_s2 = 1. - p_asy2;
-	rpref_S1 = 2.0 * pref1 * p_s1; //relative preference: to account for splitted into two demes
+	rpref_S1 = 2.0 * pref1 * p_s1; //relative preference: to correct for splitted to two demes and random interactions
 	rpref_S2 = 2.0 * pref2 * p_s2;
 	rpref_A1 = 2.0 * pref1 * p_asy1;
 	rpref_A2 = 2.0 * pref2 * p_asy2;
