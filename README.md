@@ -9,5 +9,5 @@ gcc -lgsl simulation.c -o simulation.out
 Example run for a simulation with two demes
 ```
 gcc -lgsl simulation_two_demes.c -o simulation_two_demes.out
-./simulation_two_demes.out 50000 0.02 0.02 0.2 0.800000 0.5 0.5 0.100000 100000 1
+./simulation_two_demes.out 50000 0.02 0.02 0.2 0.8 0.5 0.5 0.1 100000 1
 ```
